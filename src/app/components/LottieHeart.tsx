@@ -47,7 +47,7 @@ const LottieHeart = () => {
       }
     }, [lottie])
       return (
-      <div className='mx-auto w-[500px] h-[500px]'>
+      <div className='mx-auto w-full h-full'>
         <div ref={heartAnime} onClick={() => lottieHandler('heartAnime', 'click')} className='cursor-pointer'/>
       </div>
     )

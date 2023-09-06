@@ -21,7 +21,7 @@ const Toc = () => {
   }, [])
 
   return (
-    <div className='relative w-[30%]'>
+    <div className='hidden md:block relative w-[20%]'>
       {/* <p className=""></p> */}
       <nav className="toc sticky top-[100px] right-0" />
       <style jsx global>{`

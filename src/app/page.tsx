@@ -29,7 +29,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-12 md:p-24">
+    <main className="flex min-h-screen flex-col items-center p-3 md:p-6">
 
       <article className="h-screen w-full">
         <section>
@@ -40,7 +40,7 @@ export default function Home() {
       </article>
 
       <article className="relative flex justify-between max-w-7xl w-full h-full mx-auto">
-        <section className="toc-area w-[65%]">
+        <section className="toc-area w-full md:w-[75%]">
             <section id="sec-01" className="min-h-screen">
               <h2 id="Lottie-Area" className='text-[60px] py-[100px]'>Lottie Area</h2>
               <LottieWakuwaku />
