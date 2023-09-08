@@ -26,3 +26,20 @@ body {
     rgb(var(--background-start-rgb)); */
   background-color: #fff;
 }
+
+/* .content {
+  height: 200vh;
+  background: #fff;
+} */
+
+.js-slider {
+  position: fixed;
+  top: 0;
+  /* right: -100vw; */
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: navy;
+  transform-origin: center;
+  transform: scale(0);
+}
