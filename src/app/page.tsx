@@ -57,7 +57,7 @@ export default function Home() {
               <Image src={mvImage} alt="モーショングラフィックス" />
             </h1>
             <div className="mt-[10%]">
-              <Scroll to="Lottie-Area" className="relative cursor-pointer text-[30px] md:text-[60px] font-bold transition-opacity hover:opacity-70" smooth={true}>Scroll</Scroll>
+              <Scroll to="anch-01" className="relative cursor-pointer text-[30px] md:text-[60px] font-bold transition-opacity hover:opacity-70" smooth={true}>Scroll</Scroll>
               <div className="arrow-container">
                 <div className="arrow"></div>
                 <div className="arrow"></div>
@@ -69,28 +69,42 @@ export default function Home() {
       </article>
 
       <article className="relative flex justify-between max-w-7xl w-full h-full mx-auto pb-[100px]">
-        <section className="toc-area w-full md:w-[75%] md:pt-[100px]">
+        <section className="toc-area w-full md:w-[70%] md:pt-[100px]">
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
               <div id="sec-01" className="js-card w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="Lottie-Area" className='font-bold text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Lottie Area</h2>
-                <LottieWakuwaku />
-                <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h2 id="anch-01" className='font-bold text-[24px] md:text-[45px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>モーショングラフィックスとは？</h2>
+                <p className="text-[16px] md:text-[20px] font-bold">「モーション」・・・動きのこと</p>
+                <p className="text-[16px] md:text-[20px] font-bold">「グラフィックス」・・・画像やテキストを使った視覚表現</p>
+                <br/>
+                <p className="text-[16px] md:text-[20px] font-bold">→ その二つの単語を組み合わせた「モーショングラフィックス」</p>
+                <br/>
+                <p className="text-[16px] md:text-[24px] font-bold text-[#f9c737]">動きを加えたイラストや、実写やテキストを組み合わせた映像のこと</p>
+                <br/>
+                <br/>
               </div>
             </section>
 
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
               <div id="sec-02" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="Section-2" className='font-bold text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 2</h2>
+                <h2 id="anch-02" className='font-bold text-[24px] md:text-[40px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>こんなWebサイトを見たことはありませんか？</h2>
+                <p className="text-[16px] md:text-[18px]"><a href="https://www.yuridenki.co.jp/" className="underline text-[#f9c737]">株式会社ユリ電気商会</a></p>
+                <br/>
+                <br/>
+                <br/>
+                <p className="text-[16px] md:text-[20px] font-bold">ユーザーのアクション（クリックなど）に応じて、アニメーションする場合も</p>
+                <p className="text-[16px] md:text-[20px] font-bold">こんなUIよくありますよね！</p>
                 <LottieHeart />
-                <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。</p>
               </div>
             </section>
 
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
               <div id="sec-03" className="js-card js-card w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="Section-3" className='font-bold text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 3</h2>
-                <LottieWakuwaku />
-                <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h2 id="anch-03" className='font-bold text-[24px] md:text-[40px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>アニメーションを実装するために</h2>
+                <ul className="text-[16px] md:text-[20px] font-bold">
+                  <li className="pl-[16px] md:pl-[20px] indent-[-16px] md:indent-[-20px]">・CSSのkeyframeを使用して</li>
+                  <li className="pl-[16px] md:pl-[20px] indent-[-16px] md:indent-[-20px]">・JavaScript・JavaScriptのアニメーションライブラリなどを使用して</li>
+                  <li className="pl-[16px] md:pl-[20px] indent-[-16px] md:indent-[-20px]">・Adobe After Effectsなどのデザインツールを使用して</li>
+                </ul>
               </div>
             </section>
 

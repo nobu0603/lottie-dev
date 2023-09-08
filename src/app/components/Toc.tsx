@@ -28,7 +28,7 @@ const Toc = () => {
         .toc {
           border-radius: 0.25rem;
           padding: 1rem;
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
 
         .toc-list .toc-list {
@@ -38,7 +38,6 @@ const Toc = () => {
 
         .toc-list-item {
           padding-bottom: 0.5rem;
-          text-align: right;
         }
 
         .toc-list-item:last-child {
@@ -47,8 +46,14 @@ const Toc = () => {
 
         .toc-link {
           position: relative;
+          display: block;
+          padding-left: 1.8rem;
           color: rgba(255, 255, 255, 0.7);
           transition: .3s ease;
+        }
+
+        .toc-link:hover {
+          opacity: .7;
         }
 
         .is-active-link {
@@ -60,7 +65,7 @@ const Toc = () => {
           content: '';
           position: absolute;
           top: .8rem;
-          left: -1.5rem;
+          left: 0;
           width: .8rem;
           height: .8rem;
           background-color: rgba(255, 255, 255, 0.7);
