@@ -57,8 +57,12 @@ export default function Home() {
               <Image src={mvImage} alt="モーショングラフィックス" />
             </h1>
             <div className="mt-[10%]">
-              {/* <Link href="#Lottie-Area" className="text-[30px] md:text-[60px] font-bold">Start !!</Link> */}
-              <Scroll to="Lottie-Area" className="cursor-pointer text-[30px] md:text-[60px] font-bold" smooth={true}>Start !!</Scroll>
+              <Scroll to="Lottie-Area" className="relative cursor-pointer text-[30px] md:text-[60px] font-bold transition-opacity hover:opacity-70" smooth={true}>Scroll</Scroll>
+              <div className="arrow-container">
+                <div className="arrow"></div>
+                <div className="arrow"></div>
+                <div className="arrow"></div>
+              </div>
             </div>
           </div>
         </section>

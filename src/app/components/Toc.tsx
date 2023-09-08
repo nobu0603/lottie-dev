@@ -47,7 +47,7 @@ const Toc = () => {
 
         .toc-link {
           position: relative;
-          color: #333;
+          color: rgba(255, 255, 255, 0.7);
           transition: .3s ease;
         }
 
@@ -63,7 +63,7 @@ const Toc = () => {
           left: -1.5rem;
           width: .8rem;
           height: .8rem;
-          background-color: #333;
+          background-color: rgba(255, 255, 255, 0.7);
           border-radius: 50%;
           transform-origin: center;
         }
