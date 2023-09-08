@@ -54,10 +54,10 @@ export default function Home() {
       </article>
 
       <article className="relative flex justify-between max-w-7xl w-full h-full mx-auto pb-[100px]">
-        <section className="toc-area w-full md:w-[75%]">
+        <section className="toc-area w-full md:w-[75%] md:pt-[100px]">
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
               <div id="sec-01" className="js-card w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="Lottie-Area" className='text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Lottie Area</h2>
+                <h2 id="Lottie-Area" className='font-bold text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Lottie Area</h2>
                 <LottieWakuwaku />
                 <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               </div>
@@ -65,7 +65,7 @@ export default function Home() {
 
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
               <div id="sec-02" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="Section-2" className='text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 2</h2>
+                <h2 id="Section-2" className='font-bold text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 2</h2>
                 <LottieHeart />
                 <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。</p>
               </div>
@@ -73,7 +73,7 @@ export default function Home() {
 
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
               <div id="sec-03" className="js-card js-card w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="Section-3" className='text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 3</h2>
+                <h2 id="Section-3" className='font-bold text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 3</h2>
                 <LottieWakuwaku />
                 <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               </div>
@@ -81,7 +81,7 @@ export default function Home() {
 
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
               <div id="sec-04" className="js-card js-card w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="Section-4" className='text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 4</h2>
+                <h2 id="Section-4" className='font-bold text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 4</h2>
                 <LottieWakuwaku />
                 <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               </div>
