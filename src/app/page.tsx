@@ -64,7 +64,7 @@ export default function Home() {
             </section>
 
             <section className="w-full md:min-h-screen px-3 md:px-0 py-12 md:py-24">
-              <div id="sec-02" className="js-card w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
+              <div id="sec-02" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,0.1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[15px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
                 <h2 id="Section-2" className='text-[24px] md:text-[60px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[20px] md:mb-[40px]'>Section 2</h2>
                 <LottieHeart />
                 <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。</p>
