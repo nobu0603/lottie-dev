@@ -38,6 +38,7 @@ body {
   aspect-ratio: 1;
   border-radius: 61% 39% 16% 84% / 57% 72% 28% 43%;
   animation: fluid-anim 20s infinite;
+  -webkit-background: linear-gradient(#41BAC1, #1c6dc3);
   background: linear-gradient(#41BAC1, #1c6dc3);
   background-attachment: fixed;
   z-index: -1;
