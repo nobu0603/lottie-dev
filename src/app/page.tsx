@@ -3,9 +3,12 @@ import LottieHeart from "./components/LottieHeart";
 import LottieWakuwaku from "./components/LottieWakuwaku";
 import Toc from "./components/Toc";
 import { use, useEffect } from "react";
+import Image from 'next/image';
+import mvImage from '../../public/images/text_mv.svg';
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import VanillaTilt from 'vanilla-tilt';
+import { Link as Scroll } from 'react-scroll'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,10 +50,16 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
 
-      <article className="h-screen w-full p-3 md:p-6 bg-[#0f306d]">
-        <section>
-          <div>
-            <h1 className='text-[24px] md:text-[60px]'>デザイン講座 〜アニメーション編〜</h1>
+      <article className="h-screen w-full p-3 md:p-6">
+        <section className="w-full h-full">
+          <div className="w-full h-full flex items-center justify-center flex-col">
+            <h1 className='w-[90%] md:w-[60%]'>
+              <Image src={mvImage} alt="モーショングラフィックス" />
+            </h1>
+            <div className="mt-[10%]">
+              {/* <Link href="#Lottie-Area" className="text-[30px] md:text-[60px] font-bold">Start !!</Link> */}
+              <Scroll to="Lottie-Area" className="cursor-pointer text-[30px] md:text-[60px] font-bold" smooth={true}>Start !!</Scroll>
+            </div>
           </div>
         </section>
       </article>
