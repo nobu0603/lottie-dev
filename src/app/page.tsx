@@ -34,7 +34,9 @@ export default function Home() {
 
   useEffect(() => {
       const cards = document.querySelectorAll<HTMLElement>(".js-card");
-      if (cards.length > 0) {
+      //windowのサイズを取得
+      const windowWidth = window.innerWidth;
+      if (cards.length > 0 && windowWidth > 768) {
         VanillaTilt.init(Array.from(cards), {
           max: 25,
           speed: 400,
