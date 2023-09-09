@@ -11,7 +11,7 @@ const AnchorSection = (props: Props) => {
     const { target } = props
     
   return (
-    <Scroll to={`${target}`} className="relative cursor-pointer text-[30px] md:text-[60px] font-bold transition-opacity hover:opacity-70 text-right block" smooth={true}>Next</Scroll>
+    <Scroll to={`${target}`} className="relative cursor-pointer text-[20px] md:text-[30px] font-bold transition-opacity hover:opacity-70 text-right block mt-[20px] md:mt-[30px]" smooth={true}>Next</Scroll>
   )
 }
 
