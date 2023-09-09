@@ -123,6 +123,17 @@ body {
   transform: skew(0deg, -30deg);
 }
 
+@media screen and (max-width: 768px) {
+  .arrow-container{
+    margin: -20px auto 0;
+  }
+
+  .arrow{
+    width: 20px;
+    height: 5px;
+  }
+}
+
 @keyframes move {
   25% {
     opacity: 1;
