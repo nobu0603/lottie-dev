@@ -1,7 +1,6 @@
 "use client"
 import LottieHeart from "./components/LottieHeart";
 import LottieWakuwaku from "./components/LottieWakuwaku";
-// import Toc from "./components/Toc";
 import { use, useEffect } from "react";
 import Image from 'next/image';
 import mvImage from '../../public/images/text_mv.svg';
@@ -10,6 +9,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import VanillaTilt from 'vanilla-tilt';
 import { Link as Scroll } from 'react-scroll'
 import AnchorSection from "./components/AnchorSection";
+import AnchorNext from "./components/AnchorNext";
+import AnchorPrevTop from "./components/AnchorPrevTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,8 +21,6 @@ export default function Home() {
     
     ids.forEach((id) => {
       gsap.from(`#${id}`, {
-        // scale: 0.8,
-        // duration: 1,
         x: "-100%",
         duration: 2,
         autoAlpha: 0,
@@ -51,7 +50,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
 
-      <article className="h-screen w-full p-3 md:p-6">
+      <article id="mv" className="h-screen w-full p-3 md:p-6">
         <section className="w-full h-full">
           <div className="w-full h-full flex items-center justify-center flex-col">
             <h1 className='w-[90%] md:w-[60%]'>
@@ -83,7 +82,7 @@ export default function Home() {
                 <br/>
                 <br/>
               </div>
-              <AnchorSection target="anch-02"/>
+              <AnchorNext nextTarget="anch-02"/>
             </section>
 
             <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
@@ -97,7 +96,7 @@ export default function Home() {
                 <p className="text-[16px] md:text-[20px] font-bold">こんなUIよくありますよね！</p>
                 <LottieHeart />
               </div>
-              <AnchorSection target="anch-03"/>
+              <AnchorSection prevTarget="anch-01" nextTarget="anch-03"/>
             </section>
 
             <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
@@ -109,7 +108,7 @@ export default function Home() {
                   <li className="pl-[16px] md:pl-[20px] indent-[-16px] md:indent-[-20px]">・Adobe After Effectsなどのデザインツールを使用して</li>
                 </ul>
               </div>
-              <AnchorSection target="anch-04"/>
+              <AnchorSection prevTarget="anch-02" nextTarget="anch-04"/>
             </section>
 
             <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
@@ -118,11 +117,10 @@ export default function Home() {
                 <LottieWakuwaku />
                 <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               </div>
+              <AnchorPrevTop prevTarget="anch-03" mvTarget="mv"/>
             </section>
           
         </section>
-
-        {/* <Toc /> */}
       </article>
 
       <div className="fixed w-full h-screen z-[-1] bg-wrap">
