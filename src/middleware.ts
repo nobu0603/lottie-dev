@@ -1,24 +1,24 @@
-import { NextRequest, NextResponse } from 'next/server';
+// import { NextRequest, NextResponse } from 'next/server';
 
-const USER_NAME = process.env.BASICUSERID;
-const PASSWORD = process.env.BASICUSERPASSWORD;
+// const USER_NAME = process.env.BASICUSERID;
+// const PASSWORD = process.env.BASICUSERPASSWORD;
 
-export function middleware(req: NextRequest) {
-  const basicAuth = req.headers.get('authorization');
+// export function middleware(req: NextRequest) {
+//   const basicAuth = req.headers.get('authorization');
 
-  if (basicAuth) {
-    const auth = basicAuth.split(' ')[1];
-    const [ user, password ] = atob(auth).split(':');
+//   if (basicAuth) {
+//     const auth = basicAuth.split(' ')[1];
+//     const [ user, password ] = atob(auth).split(':');
 
-    if (user === USER_NAME && password === PASSWORD) {
-      return NextResponse.next();
-    }
-  }
+//     if (user === USER_NAME && password === PASSWORD) {
+//       return NextResponse.next();
+//     }
+//   }
 
-  return new Response('Auth required', {
-    status: 401,
-    headers: {
-      'WWW-Authenticate': 'Basic realm="Secure Area"'
-    }
-  });
-}
+//   return new Response('Auth required', {
+//     status: 401,
+//     headers: {
+//       'WWW-Authenticate': 'Basic realm="Secure Area"'
+//     }
+//   });
+// }
