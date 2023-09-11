@@ -18,9 +18,9 @@
 
 body {
   position: relative;
-  color: #fff;
+  color: #333;
   /* background-color: #1A4776; */
-  background-color: #222;
+  background-color: #fff;
 }
 
 :focus-visible {
@@ -39,10 +39,11 @@ body {
   aspect-ratio: 1;
   border-radius: 61% 39% 16% 84% / 57% 72% 28% 43%;
   animation: fluid-anim 20s infinite;
-  /* -webkit-background: linear-gradient(#41BAC1, #1c6dc3);
-  background: linear-gradient(#41BAC1, #1c6dc3); */
-  -webkit-background: linear-gradient(#676767, #333);
-  background: linear-gradient(#676767, #333);
+  -webkit-background: linear-gradient(#41BAC1, #1c6dc3);
+  background: linear-gradient(#41BAC1, #1c6dc3);
+  /* -webkit-background: linear-gradient(#676767, #333); */
+  /* -webkit-background: linear-gradient(#00046e, #049ff2);
+  background: linear-gradient(#00046e, #049ff2); */
   background-attachment: fixed;
   z-index: -1;
 }
@@ -113,7 +114,7 @@ body {
   top: 0;
   height: 100%;
   width: 51%;
-  background: #fff;
+  background: #333;
 }
 
 .arrow:before {
@@ -164,8 +165,8 @@ body {
   left: 17px;
   width: 15px;
   height: 15px;
-  border-bottom: 3px solid #fff;
-  border-left: 3px solid #fff;
+  border-bottom: 3px solid #333;
+  border-left: 3px solid #333;
   transform: translateY(-50%) rotate(45deg);
 }
 
@@ -176,8 +177,8 @@ body {
   right: 17px;
   width: 15px;
   height: 15px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-top: 3px solid #333;
+  border-right: 3px solid #333;
   transform: translateY(-50%) rotate(45deg);
 }
 
@@ -188,8 +189,8 @@ body {
   left: 50%;
   width: 15px;
   height: 15px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
+  border-top: 3px solid #333;
+  border-left: 3px solid #333;
   transform: translateX(-50%) rotate(45deg);
 }
 
@@ -199,23 +200,23 @@ body {
     left: 12px;
     width: 8px;
     height: 8px;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
   }
 
   .arrow-right::before {
     right: 12px;
     width: 8px;
     height: 8px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
   }
 
   .arrow-top::before {
     top: 12px;
     width: 8px;
     height: 8px;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
   }
 }
