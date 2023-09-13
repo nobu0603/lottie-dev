@@ -6,6 +6,7 @@ import Image from 'next/image';
 import mvImage from '../../public/images/text_mv.svg';
 import linkNoImage from '../../public/images/image_notfound.jpg';
 import wakuwakuImage from '../../public/images/wakuwaku.svg';
+import flowImage from '../../public/images/img_flow.jpg';
 import flowImage01 from '../../public/images/img_flow_01.png';
 import flowImage02 from '../../public/images/img_flow_02.png';
 import flowImage03 from '../../public/images/img_flow_03.png';
@@ -137,10 +138,10 @@ export default function Home() {
                 <h2 id="anch-03" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>モーショングラフィックスのメリット</h2>
                 <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
                 <ul className="text-[20px] md:text-[30px] font-bold mb-[40px] md:mb-[60px]">
-                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">情報を正確に</span>伝えることができる。</li>
-                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">印象に残りやすい</span>。</li>
-                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">制作コストが比較的安い</span>。</li>
-                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">表現の幅が広がる</span>。</li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">情報を正確</span>に伝えることができる。</li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">印象</span>に残りやすい。</li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">表現の幅</span>が広がる。</li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">制作コスト</span>が比較的安い。</li>
                 </ul>
               </div>
               <AnchorSection prevTarget="anch-02" nextTarget="anch-04"/>
@@ -151,9 +152,9 @@ export default function Home() {
                 <h2 id="anch-04" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>モーショングラフィックスを実装するために</h2>
                 <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
                 <ul className="text-[20px] md:text-[30px] font-bold mb-[40px] md:mb-[60px]">
-                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">CSSのkeyframe</span>を使用して</li>
-                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">JavaScript・JavaScriptのアニメーションライブラリ</span>などを使用して</li>
-                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">Adobe After Effects・Figmaなどのデザインツール</span>を使用して</li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">CSS</span>のkeyframeを使用して</li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">JavaScript</span>・JavaScriptのアニメーションライブラリなどを使用して</li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">Adobe After Effects・Figma</span>などのデザインツールを使用して</li>
                 </ul>
                 <p className="text-[20px] md:text-[30px] font-bold">今回は<span className="text-[#ed4141]">Adobe After Effects</span>にフォーカスして、アニメーションを作る部分を重点的に紹介します。</p>
               </div>
@@ -164,7 +165,19 @@ export default function Home() {
               <div id="sec-05" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[10px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
                 <h2 id="anch-05" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>Adobe After Effectsを使用した実装フロー</h2>
                 <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
-                <p className="text-[16px] md:text-[18px] w-full h-[400px] flex justify-center items-center">フロー図を作成します。</p>
+                <Image src={flowImage} alt="Adobe After Effectsを使用した実装フロー" className="w-full md:w-[60%] mx-auto mb-[40px] md:mb-[60px]" priority />
+                <p className="text-[20px] md:text-[30px] font-bold"></p>
+                <ol className="text-[20px] md:text-[30px] font-bold mb-[40px] md:mb-[60px]">
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">
+                    <span className="text-[#ed4141]">1.</span>Illustratorなどのデザインツールで、イラストを準備する。
+                  </li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">
+                    <span className="text-[#ed4141]">2.</span>After Effectsを使用してイラストにアニメーションをつける。
+                  </li>
+                  <li className="pl-[20px] md:pl-[30px] indent-[-20px] md:indent-[-30px] mb-[10px] md:mb-[20px]">
+                    <span className="text-[#ed4141]">3.</span>2.で作成したアニメーションをJSON形式で書き出して、JavaScriptのライブラリであるLottieを使用してWebサイトに実装する。
+                  </li>
+                </ol>
               </div>
               <AnchorSection prevTarget="anch-04" nextTarget="anch-06"/>
             </section>
@@ -175,6 +188,7 @@ export default function Home() {
                 <hr className="border-b border-[#1a4776] mb-[40px] md:mb-[80px]" />
                 <Image src={wakuwakuImage} alt="ワクワク" className="w-[70%] mx-auto mb-[50px] md:mb-[80px]" priority />
                 <p className="text-[20px] md:text-[30px] font-bold">上の画像に動きをつけて、より”わくわく感”を表現してみようと思います！</p>
+                <p className="text-[20px] md:text-[30px] font-bold">参考：<a href="https://youtu.be/ENaiD-U31mo?si=C7mbEVcDLnwBlWdr" target="_blank" className="text-blue-600">https://youtu.be/ENaiD-U31mo?si=C7mbEVcDLnwBlWdr</a></p>
               </div>
               <AnchorSection prevTarget="anch-05" nextTarget="anch-07"/>
             </section>
