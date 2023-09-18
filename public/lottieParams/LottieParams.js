@@ -6,6 +6,14 @@ export const WakuwakuAnimation = {
   autoplay: true,
   path: "/lottieJson/wakuwaku_animation.json",
 };
+export const WakuwakuBetaAnimation = {
+  container: null,
+  name: "wakuwakuBetaLoop",
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "/lottieJson/wakuwaku_beta.json",
+};
 export const HeartAnimation = {
   container: null,
   name: "heartAnime",
