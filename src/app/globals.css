@@ -18,7 +18,7 @@
 
 body {
   position: relative;
-  color: #333;
+  color: #fff;
   /* background-color: #1A4776; */
   background-color: #1a4776;
 }
@@ -161,43 +161,43 @@ body {
 .arrow-left::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 17px;
-  width: 15px;
-  height: 15px;
+  top: 10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
   border-bottom: 3px solid #333;
   border-left: 3px solid #333;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(135deg);
 }
 
 .arrow-right::before {
   content: "";
   position: absolute;
-  top: 50%;
-  right: 17px;
-  width: 15px;
-  height: 15px;
+  top: 10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
   border-top: 3px solid #333;
   border-right: 3px solid #333;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(135deg);
 }
 
 .arrow-top::before {
   content: "";
   position: absolute;
-  top: 19px;
+  top: 10px;
   left: 50%;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-top: 3px solid #333;
   border-left: 3px solid #333;
-  transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(-135deg);
 }
 
 @media screen and (max-width: 768px) {
   
   .arrow-left::before {
-    left: 12px;
+    top: 8px;
     width: 8px;
     height: 8px;
     border-bottom: 2px solid #333;
@@ -205,7 +205,7 @@ body {
   }
 
   .arrow-right::before {
-    right: 12px;
+    top: 8px;
     width: 8px;
     height: 8px;
     border-top: 2px solid #333;
@@ -213,7 +213,7 @@ body {
   }
 
   .arrow-top::before {
-    top: 12px;
+    top: 8px;
     width: 8px;
     height: 8px;
     border-top: 2px solid #333;
