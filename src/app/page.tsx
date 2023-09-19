@@ -17,9 +17,6 @@ import flowImage06 from '../../public/images/img_flow_06.png';
 import flowImage07 from '../../public/images/img_flow_07.png';
 import flowImage08 from '../../public/images/img_flow_08.png';
 import flowImage09 from '../../public/images/img_flow_09.png';
-import flowImage10 from '../../public/images/img_flow_10.png';
-import flowImage11 from '../../public/images/img_flow_11.png';
-import flowImage12 from '../../public/images/img_flow_12.png';
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import VanillaTilt from 'vanilla-tilt';
@@ -33,7 +30,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
 
   useEffect(() => {
-    const ids = ['sec-01', 'sec-02', 'sec-03', 'sec-04', 'sec-05', 'sec-06', 'sec-07', 'sec-08'];
+    const ids = ['sec-01', 'sec-02', 'sec-03', 'sec-04', 'sec-05', 'sec-06', 'sec-07', 'sec-08', 'sec-09', 'sec-10', 'sec-11', 'sec-12', 'sec-13', 'sec-14', 'sec-15', 'sec-16', 'sec-17', 'sec-18'];
     
     ids.forEach((id) => {
       gsap.from(`#${id}`, {
@@ -93,7 +90,6 @@ export default function Home() {
                 <p className="text-[16px] md:text-[30px] font-bold">「モーション」・・・動きのこと</p>
                 <p className="text-[16px] md:text-[30px] font-bold">「グラフィックス」・・・画像やテキストを使った視覚表現</p>
                 <br/>
-                <p className="text-[16px] md:text-[30px] font-bold">その二つの単語を組み合わせたものが「モーショングラフィックス」</p>
                 <br/>
                 <p className="text-[16px] md:text-[30px] font-bold text-[#ed4141]">動きを加えたイラストや、実写やテキストを組み合わせた映像のこと</p>
                 <br/>
@@ -189,7 +185,8 @@ export default function Home() {
                 <hr className="border-b border-[#1a4776] mb-[40px] md:mb-[80px]" />
                 <Image src={wakuwakuImage} alt="ワクワク" className="w-[70%] mx-auto mb-[50px] md:mb-[80px]" priority />
                 <p className="text-[16px] md:text-[30px] font-bold">上の画像に動きをつけて、より”わくわく感”を表現してみようと思います！</p>
-                <p className="text-[16px] md:text-[30px] font-bold">教材：<a href="https://youtu.be/ENaiD-U31mo?si=C7mbEVcDLnwBlWdr" target="_blank" className="text-blue-600">https://youtu.be/ENaiD-U31mo?si=C7mbEVcDLnwBlWdr</a></p>
+                <br/>
+                <p className="text-[16px] md:text-[30px] font-bold">参考教材：<a href="https://youtu.be/ENaiD-U31mo?si=C7mbEVcDLnwBlWdr" target="_blank" className="text-blue-600">https://youtu.be/ENaiD-U31mo?si=C7mbEVcDLnwBlWdr</a></p>
               </div>
               <AnchorSection prevTarget="anch-05" nextTarget="anch-07"/>
             </section>
@@ -275,19 +272,64 @@ export default function Home() {
                 <h2 id="anch-13" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>①拡大縮小アニメーションを実装する</h2>
                 <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
                 <Image src={flowImage06} alt="アニメーションを実装する" className="w-full mx-auto mb-[40px] md:mb-[60px]" priority />
-                <p className="text-[16px] md:text-[30px] font-bold"></p>
+                <p className="text-[16px] md:text-[30px] font-bold">今回は「スケール」の項目を変化させて、アニメーションを実装していきます。</p>
               </div>
               <AnchorSection prevTarget="anch-12" nextTarget="anch-14"/>
             </section>
 
             <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
-              <div id="sec-20" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[10px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
-                <h2 id="anch-20" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>Section 4</h2>
+              <div id="sec-14" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[11px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
+                <h2 id="anch-14" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>②拡大縮小アニメーションを実装する</h2>
                 <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
-                <LottieWakuwaku />
-                <p className="text-[16px] md:text-[18px]">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <Image src={flowImage07} alt="アニメーションを実装する" className="w-full mx-auto mb-[40px] md:mb-[60px]" priority />
+                <p className="text-[16px] md:text-[30px] font-bold">4フレーム・・・<br/>「わ」の幅（X軸）を90%、高さ（Y軸）を110%<br/>「わ」がちょうどまっすぐになるタイミングで細長くする。</p>
               </div>
-              <AnchorPrevTop prevTarget="anch-19" mvTarget="mv"/>
+              <AnchorSection prevTarget="anch-13" nextTarget="anch-15"/>
+            </section>
+
+            <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
+              <div id="sec-15" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[11px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
+                <h2 id="anch-15" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>③拡大縮小アニメーションを実装する</h2>
+                <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
+                <Image src={flowImage08} alt="アニメーションを実装する" className="w-full mx-auto mb-[40px] md:mb-[60px]" priority />
+                <p className="text-[16px] md:text-[30px] font-bold">8フレーム・・・<br/>「わ」の幅（X軸）を110%、高さ（Y軸）を90%<br/>「わ」が右に8度回転するタイミングで潰れたようにする。</p>
+              </div>
+              <AnchorSection prevTarget="anch-14" nextTarget="anch-16"/>
+            </section>
+
+            <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
+              <div id="sec-16" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[11px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
+                <h2 id="anch-16" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>④拡大縮小アニメーションを実装する</h2>
+                <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
+                <Image src={flowImage09} alt="アニメーションを実装する" className="w-full mx-auto mb-[40px] md:mb-[60px]" priority />
+                <p className="text-[16px] md:text-[30px] font-bold">8フレーム〜18フレームまでは、「わ」が右に8度回転している状態</p>
+                <br/>
+                <p className="text-[16px] md:text-[30px] font-bold">12フレーム・・・<br/>「わ」の幅（X軸）を95%、高さ（Y軸）を105%<br/>潰れた状態から細長くする。</p>
+                <br/>
+                <p className="text-[16px] md:text-[30px] font-bold">16フレーム・・・<br/>「わ」の幅（X軸）を105%、高さ（Y軸）を95%<br/>細長い状態から潰れたようにする。</p>
+                <br/>
+                <p className="text-[16px] md:text-[30px] font-bold">上記のアニメーションを左に傾いた時にも同様に繰り返す。</p>
+              </div>
+              <AnchorSection prevTarget="anch-15" nextTarget="anch-17"/>
+            </section>
+
+            <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
+              <div id="sec-17" className="w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[11px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
+                <h2 id="anch-17" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>完成</h2>
+                <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
+                <p className="text-[16px] md:text-[30px] font-bold">回転と拡大縮小のアニメーションを合わせた完成形がこちら・・・</p>
+                <LottieWakuwaku />
+              </div>
+              <AnchorSection prevTarget="anch-16" nextTarget="anch-18"/>
+            </section>
+
+            <section className="w-full min-h-screen px-3 md:px-8 py-12 md:py-24">
+              <div id="sec-18" className="js-card w-hull h-full p-[20px] md:p-[40px] bg-[rgba(255,255,255,1)] backdrop-blur-sm border-t border-l border-[rgba(255,255,255,0.2)] rounded-[10px] shadow-[20px_20px_50px_0_rgba(0,0,0,0.5)]">
+                <h2 id="anch-18" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px]'>まとめ</h2>
+                <hr className="border-b border-[#1a4776] mb-[20px] md:mb-[40px]" />
+                <p className="text-[16px] md:text-[30px] font-bold"></p>
+              </div>
+              <AnchorPrevTop prevTarget="anch-17" mvTarget="mv"/>
             </section>
           
         </section>
