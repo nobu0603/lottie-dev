@@ -18,9 +18,9 @@
 
 body {
   position: relative;
-  color: #fff;
+  color: #333;
   /* background-color: #1A4776; */
-  background-color: #1a4776;
+  background-color: #fff;
 }
 
 :focus-visible {
@@ -39,8 +39,8 @@ body {
   aspect-ratio: 1;
   border-radius: 61% 39% 16% 84% / 57% 72% 28% 43%;
   animation: fluid-anim 20s infinite;
-  -webkit-background: linear-gradient(#41BAC1, #1c6dc3);
-  background: linear-gradient(#41BAC1, #1c6dc3);
+  -webkit-background: linear-gradient(#8af9ff, #80bbfb);
+  background: linear-gradient(#8af9ff, #80bbfb);
   /* -webkit-background: linear-gradient(#676767, #333); */
   /* -webkit-background: linear-gradient(#00046e, #049ff2);
   background: linear-gradient(#00046e, #049ff2); */
