@@ -52,7 +52,7 @@ export default function Home() {
               <Image src={mvImage} alt="モーショングラフィックス" priority />
             </h1>
             <div className="mt-[10%]">
-              <Scroll to="anch-01" className="z-10 relative cursor-pointer text-white text-[30px] md:text-[40px] font-bold transition-opacity hover:opacity-70" aria-label="最初のスライドへ" smooth={true}>Scroll</Scroll>
+              <Scroll to="anch-01" className="z-10 relative cursor-pointer text-white text-[20px] md:text-[40px] font-bold transition-opacity hover:opacity-70" aria-label="最初のスライドへ" smooth={true}>Scroll</Scroll>
               <div className="arrow-container">
                 <div className="arrow"></div>
                 <div className="arrow"></div>
