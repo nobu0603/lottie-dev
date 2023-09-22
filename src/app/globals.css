@@ -130,12 +130,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .arrow-container{
-    margin: -20px auto 0;
+    width: 15px;
+    height: 15px;
+    margin: -15px auto 0;
   }
 
   .arrow{
-    width: 20px;
-    height: 5px;
+    width: 15px;
+    height: 4px;
   }
 }
 
