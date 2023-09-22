@@ -176,8 +176,8 @@ export default function Home() {
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
                     <img  className="w-[30%] object-cover" src="https://i.ytimg.com/vi/ENaiD-U31mo/maxresdefault.jpg" alt="09 楽【おもいをつたえるテキストアニメーション】" />
                       <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
-                        <p className="hdg-3 line-clamp-2">09 楽【おもいをつたえるテキストアニメーション】</p>
-                        <p className="line-clamp-2">▶︎Video Salonhttps://videosalon.jp/▶︎リンクweb: http://mooograph.com/Twitter: https://twitter.com/mooog</p>
+                        <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">09 楽【おもいをつたえるテキストアニメーション】</p>
+                        <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">▶︎Video Salonhttps://videosalon.jp/▶︎リンクweb: http://mooograph.com/Twitter: https://twitter.com/mooog</p>
                       </div>
                   </div>
                 </a>
