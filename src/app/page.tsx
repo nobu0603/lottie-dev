@@ -10,7 +10,9 @@ import LottieAnimationNum5 from "./components/LottieAnimationNum5";
 import { use, useEffect } from "react";
 import Image from 'next/image';
 import mvImage from '../../public/images/text_mv.svg';
-import linkNoImage from '../../public/images/image_notfound.jpg';
+import linkYuridenkiImage from '../../public/images/image_og_yuridenki.png';
+import linkLottieImage from '../../public/images/image_og_lottie.png';
+import linkSampleImage from '../../public/images/image_og_sample.jpg';
 import linkGitImage from '../../public/images/image_og_github.jpg';
 import wakuwakuImage from '../../public/images/wakuwaku.svg';
 import flowImage from '../../public/images/img_flow.png';
@@ -91,7 +93,7 @@ export default function Home() {
                 <p className="text-[16px] md:text-[30px] font-bold mb-[30px]">実際にモーショングラフィックスが使われているWebサイト</p>
                 <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
-                    <img className="w-[30%] object-cover" src="https://stp-v4-cdn.lottiefiles.com/og_118_735d54b39c.png" alt="LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。" />
+                    <Image src={linkLottieImage} alt="LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。" className="w-[30%] object-cover" priority />
                     <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
                         <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。</p>
                         <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">無料で最軽量の、すぐに使えるモーショングラフィックスを、ウェブやアプリ、ソーシャルメディアやデザイン向けに簡単に提供します。Lottieのアニメーションは、作成から編集、テスト、共同作業、そして配信ま</p>
@@ -100,7 +102,7 @@ export default function Home() {
                 </a>
                 <a href="https://www.yuridenki.co.jp/" target="_blank" rel="noreferrer" className="block mb-[40px] lg:mb-[60px] lg:hover:opacity-70 transition-opacity">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
-                    <Image src={linkNoImage} alt="株式会社ユリ電気商会" className="w-[30%] object-cover" priority />
+                    <Image src={linkYuridenkiImage} alt="株式会社ユリ電気商会" className="w-[30%] object-cover" priority />
                     <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
                       <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">株式会社ユリ電気商会</p>
                       <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">1951年創業。町の電気屋さんから始まったユリ電気商会は電気工事事業への進出、道路・プラント機器の商社と発展を遂げてまいりました。2023年にエンベデッド製品事業部・横浜営業所を開設しました。</p>
@@ -118,10 +120,10 @@ export default function Home() {
                 <h2 id="anch-03" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[5px]'>モーショングラフィックスのメリット</h2>
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
                 <ul className="text-[16px] md:text-[30px] font-bold mb-[40px] md:mb-[60px]">
-                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">情報を正確</span>に伝えることができる。</li>
-                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">印象</span>に残りやすい。</li>
-                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">表現の幅</span>が広がる。</li>
-                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">制作コスト</span>が比較的安い。</li>
+                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">情報を正確</span>に伝えることができる</li>
+                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">印象</span>に残りやすい</li>
+                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">表現の幅</span>が広がる</li>
+                  <li className="pl-[16px] md:pl-[30px] indent-[-16px] md:indent-[-30px] mb-[10px] md:mb-[20px]">・<span className="text-[#ed4141]">制作コスト</span>が比較的安い</li>
                 </ul>
                 <LottieAnimationNum5 />
               </div>
@@ -175,7 +177,7 @@ export default function Home() {
                 <p className="text-[16px] md:text-[30px] font-bold mt-[20px] md:mt-[40px]">参考教材</p>
                 <a href="https://youtu.be/ENaiD-U31mo?si=XZvCbQdqXmTBAkxk" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
-                    <img  className="w-[30%] object-cover" src="https://i.ytimg.com/vi/ENaiD-U31mo/maxresdefault.jpg" alt="09 楽【おもいをつたえるテキストアニメーション】" />
+                    <Image src={linkSampleImage} alt="09 楽【おもいをつたえるテキストアニメーション】" className="w-[30%] object-cover" priority />
                       <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
                         <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">09 楽【おもいをつたえるテキストアニメーション】</p>
                         <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">▶︎Video Salonhttps://videosalon.jp/▶︎リンクweb: http://mooograph.com/Twitter: https://twitter.com/mooog</p>
@@ -332,7 +334,17 @@ export default function Home() {
               <div id="sec-19" className="w-hull h-full p-[20px] md:p-[40px]">
                 <h2 id="anch-19" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[5px]'>最後に</h2>
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
-                <p className="text-[16px] md:text-[30px] font-bold"></p>
+                <p className="text-[16px] md:text-[30px] font-bold">興味のある方はこちら</p>
+                <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
+                  <div className="linkCard w-full h-[100px] lg:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
+                  <Image src={linkLottieImage} alt="LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。" className="w-[30%] object-cover" priority />
+                    <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
+                        <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。</p>
+                        <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">無料で最軽量の、すぐに使えるモーショングラフィックスを、ウェブやアプリ、ソーシャルメディアやデザイン向けに簡単に提供します。Lottieのアニメーションは、作成から編集、テスト、共同作業、そして配信ま</p>
+                    </div>
+                  </div>
+                </a>
+                <p className="text-[16px] md:text-[30px] font-bold">今回のソースコード</p>
                 <a href="https://github.com/nobu0603/lottie-dev" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
                     <Image src={linkGitImage} alt="GitHub - nobu0603/lottie-dev" className="w-[30%] object-cover" priority />
