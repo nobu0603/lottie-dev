@@ -11,6 +11,7 @@ import { use, useEffect } from "react";
 import Image from 'next/image';
 import mvImage from '../../public/images/text_mv.svg';
 import linkNoImage from '../../public/images/image_notfound.jpg';
+import linkGitImage from '../../public/images/image_og_github.jpg';
 import wakuwakuImage from '../../public/images/wakuwaku.svg';
 import flowImage from '../../public/images/img_flow.png';
 import flowImage01 from '../../public/images/img_flow_01.png';
@@ -232,7 +233,7 @@ export default function Home() {
                 <h2 id="anch-11" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[5px]'>②左右に回転するアニメーションを実装する</h2>
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
                 <Image src={flowImage04} alt="アニメーションを実装する" className="w-full md:w-[80%] mx-auto mb-[40px] md:mb-[60px]" priority />
-                <p className="text-[16px] md:text-[30px] font-bold">8フレーム後にアンカーポイントを起点に右に8度回転させます。<br/>ここでは1秒が30（29.97）フレーム）なので、1フレームは約0.03秒になります。</p>
+                <p className="text-[16px] md:text-[30px] font-bold">8フレーム後にアンカーポイントを起点に右に8度回転させます。<br/>ここでは1秒が30（29.97）フレームなので、1フレームは約0.03秒になります。</p>
               </div>
             </section>
 
@@ -329,9 +330,18 @@ export default function Home() {
             <section className="w-full min-h-screen pl-0 pr-3 md:px-8 py-12 md:py-24 mb-[300px]">
               <AnchorPrevTop prevTarget="anch-18" mvTarget="mv"/>
               <div id="sec-19" className="w-hull h-full p-[20px] md:p-[40px]">
-                <h2 id="anch-19" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[5px]'>まとめ</h2>
+                <h2 id="anch-19" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[5px]'>最後に</h2>
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
                 <p className="text-[16px] md:text-[30px] font-bold"></p>
+                <a href="https://github.com/nobu0603/lottie-dev" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
+                  <div className="linkCard w-full h-[100px] lg:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
+                    <Image src={linkGitImage} alt="GitHub - nobu0603/lottie-dev" className="w-[30%] object-cover" priority />
+                    <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
+                      <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">GitHub - nobu0603/lottie-dev</p>
+                      <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">Contribute to nobu0603/lottie-dev development by creating an account on GitHub.</p>
+                    </div>
+                  </div>
+                </a>
                 <LottieAnimationNum1 />
               </div>
             </section>
