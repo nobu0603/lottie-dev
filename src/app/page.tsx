@@ -29,10 +29,11 @@ import VanillaTilt from 'vanilla-tilt';
 import { Link as Scroll } from 'react-scroll'
 import AnchorSection from "./components/AnchorSection";
 import AnchorNext from "./components/AnchorNext";
-import AnchorPrevTop from "./components/AnchorPrevTop";
+import AnchorPrev from "./components/AnchorPrev";
 
 export default function Home() {
 
+  // cardに傾きをつけるいらない機能（VanillaTiltを使ってみたかっただけ）
   useEffect(() => {
       const cards = document.querySelectorAll<HTMLElement>(".js-card");
       //windowのサイズを取得
@@ -91,7 +92,7 @@ export default function Home() {
                 <h2 id="anch-02" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[5px]'>実例紹介</h2>
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
                 <p className="text-[16px] md:text-[30px] font-bold mb-[30px]">実際にモーショングラフィックスが使われているWebサイト</p>
-                <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
+                <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity js-card">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
                     <Image src={linkLottieImage} alt="LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。" className="w-[30%] object-cover" priority />
                     <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
@@ -100,7 +101,7 @@ export default function Home() {
                     </div>
                   </div>
                 </a>
-                <a href="https://www.yuridenki.co.jp/" target="_blank" rel="noreferrer" className="block mb-[40px] lg:mb-[60px] lg:hover:opacity-70 transition-opacity">
+                <a href="https://www.yuridenki.co.jp/" target="_blank" rel="noreferrer" className="block mb-[40px] lg:mb-[60px] lg:hover:opacity-70 transition-opacity js-card">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
                     <Image src={linkYuridenkiImage} alt="株式会社ユリ電気商会" className="w-[30%] object-cover" priority />
                     <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
@@ -175,7 +176,7 @@ export default function Home() {
                 <p className="text-[16px] md:text-[30px] font-bold">上の画像に動きをつけて、より”わくわく感”を表現してみようと思います！</p>
                 <br/>
                 <p className="text-[16px] md:text-[30px] font-bold mt-[20px] md:mt-[40px]">参考教材</p>
-                <a href="https://youtu.be/ENaiD-U31mo?si=XZvCbQdqXmTBAkxk" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
+                <a href="https://youtu.be/ENaiD-U31mo?si=XZvCbQdqXmTBAkxk" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity js-card">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
                     <Image src={linkSampleImage} alt="09 楽【おもいをつたえるテキストアニメーション】" className="w-[30%] object-cover" priority />
                       <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
@@ -329,13 +330,13 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="w-full min-h-screen pl-0 pr-3 md:px-8 py-12 md:py-24 mb-[300px]">
-              <AnchorPrevTop prevTarget="anch-18" mvTarget="mv"/>
+            <section className="w-full min-h-screen pl-0 pr-3 md:px-8 py-12 md:py-24">
+              <AnchorPrev prevTarget="anch-18" />
               <div id="sec-19" className="w-hull h-full p-[20px] md:p-[40px]">
                 <h2 id="anch-19" className='font-bold text-[24px] md:text-[50px] pt-[48px] md:pt-[96px] mt-[-48px] md:mt-[-96px] mb-[5px]'>最後に</h2>
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
                 <p className="text-[16px] md:text-[30px] font-bold">興味のある方はこちら</p>
-                <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
+                <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity js-card">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
                   <Image src={linkLottieImage} alt="LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。" className="w-[30%] object-cover" priority />
                     <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
@@ -345,7 +346,7 @@ export default function Home() {
                   </div>
                 </a>
                 <p className="text-[16px] md:text-[30px] font-bold">今回のソースコード</p>
-                <a href="https://github.com/nobu0603/lottie-dev" target="_blank" rel="noreferrer" className="block mb-[20px] lg:mb-[40px] lg:hover:opacity-70 transition-opacity">
+                <a href="https://github.com/nobu0603/lottie-dev" target="_blank" rel="noreferrer" className="block mb-[40px] lg:mb-[80px] lg:hover:opacity-70 transition-opacity js-card">
                   <div className="linkCard w-full h-[100px] lg:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
                     <Image src={linkGitImage} alt="GitHub - nobu0603/lottie-dev" className="w-[30%] object-cover" priority />
                     <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">

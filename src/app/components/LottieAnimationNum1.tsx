@@ -3,6 +3,7 @@ import React from 'react'
 import { useEffect, useRef, useState } from 'react'
 import { Animation01 } from '../../../public/lottieParams/LottieParams.js'
 import { AnimationConfig, LottiePlayer } from 'lottie-web'
+import { Link as Scroll } from 'react-scroll'
 
 const LottieAnimationNum1 = () => {
   // lottieインスタンスを定義する
@@ -24,8 +25,11 @@ const LottieAnimationNum1 = () => {
       }
     }, [lottie])
       return (
-      <div className='w-full md:w-[40%] mx-auto min-h-700px'>
-        <div ref={AnimationNum01}/>
+      <div className='w-[100px] md:w-[120px] ml-auto'>
+        <Scroll to='mv' smooth={true} duration={1000} className="cursor-pointer block w-full h-full hover:opacity-70 transition-opacity">
+          <div ref={AnimationNum01}/>
+          <p className='text-center font-bold text-[14px] md:text-[16px]'>TOP</p>
+        </Scroll>
       </div>
     )
   }
