@@ -93,18 +93,18 @@ export default function Home() {
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
                 <p className="text-[16px] md:text-[30px] font-bold mb-[30px]">実際にモーショングラフィックスが使われているWebサイト</p>
                 <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] md:mb-[40px] md:hover:opacity-70 transition-opacity js-card">
-                  <div className="linkCard w-full h-[100px] md:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
+                  <div className="linkCard w-full h-[100px] md:h-[150px] flex rounded-md border border-gray-200 overflow-hidden">
                     <Image src={linkLottieImage} alt="LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。" className="w-[30%] object-cover" priority />
-                    <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
+                    <div className="w-[70%] py-4 px-3 border-l border-gray-200">
                         <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。</p>
                         <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">無料で最軽量の、すぐに使えるモーショングラフィックスを、ウェブやアプリ、ソーシャルメディアやデザイン向けに簡単に提供します。Lottieのアニメーションは、作成から編集、テスト、共同作業、そして配信ま</p>
                     </div>
                   </div>
                 </a>
                 <a href="https://www.yuridenki.co.jp/" target="_blank" rel="noreferrer" className="block mb-[40px] md:mb-[60px] md:hover:opacity-70 transition-opacity js-card">
-                  <div className="linkCard w-full h-[100px] md:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
+                  <div className="linkCard w-full h-[100px] md:h-[150px] flex rounded-md border border-gray-200 overflow-hidden">
                     <Image src={linkYuridenkiImage} alt="株式会社ユリ電気商会" className="w-[30%] object-cover" priority />
-                    <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
+                    <div className="w-[70%] py-4 px-3 border-l border-gray-200">
                       <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">株式会社ユリ電気商会</p>
                       <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">1951年創業。町の電気屋さんから始まったユリ電気商会は電気工事事業への進出、道路・プラント機器の商社と発展を遂げてまいりました。2023年にエンベデッド製品事業部・横浜営業所を開設しました。</p>
                     </div>
@@ -177,9 +177,9 @@ export default function Home() {
                 <br/>
                 <p className="text-[16px] md:text-[30px] font-bold mt-[20px] md:mt-[40px]">参考教材</p>
                 <a href="https://youtu.be/ENaiD-U31mo?si=XZvCbQdqXmTBAkxk" target="_blank" rel="noreferrer" className="block mb-[20px] md:mb-[40px] md:hover:opacity-70 transition-opacity js-card">
-                  <div className="linkCard w-full h-[100px] md:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
+                  <div className="linkCard w-full h-[100px] md:h-[150px] flex bg-white rounded-md border border-gray-200 overflow-hidden">
                     <Image src={linkSampleImage} alt="09 楽【おもいをつたえるテキストアニメーション】" className="w-[30%] object-cover" priority />
-                      <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
+                      <div className="w-[70%] py-4 px-3 border-l border-gray-200">
                         <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">09 楽【おもいをつたえるテキストアニメーション】</p>
                         <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">▶︎Video Salonhttps://videosalon.jp/▶︎リンクweb: http://mooograph.com/Twitter: https://twitter.com/mooog</p>
                       </div>
@@ -337,9 +337,9 @@ export default function Home() {
                 <hr className="border-b border-[#1A4776] mb-[20px] md:mb-[40px]" />
                 <p className="text-[16px] md:text-[30px] font-bold">興味のある方はこちら</p>
                 <a href="https://lottiefiles.com/jp/" target="_blank" rel="noreferrer" className="block mb-[20px] md:mb-[40px] md:hover:opacity-70 transition-opacity js-card">
-                  <div className="linkCard w-full h-[100px] md:h-[150px] flex dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
+                  <div className="linkCard w-full h-[100px] md:h-[150px] flex rounded-md border border-gray-200 overflow-hidden">
                   <Image src={linkLottieImage} alt="LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。" className="w-[30%] object-cover" priority />
-                    <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
+                    <div className="w-[70%] py-4 px-3 border-l border-gray-200">
                         <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">LottieFiles: ウェブサイト＆アプリ用の軽量アニメーションを無料でダウンロード。</p>
                         <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">無料で最軽量の、すぐに使えるモーショングラフィックスを、ウェブやアプリ、ソーシャルメディアやデザイン向けに簡単に提供します。Lottieのアニメーションは、作成から編集、テスト、共同作業、そして配信ま</p>
                     </div>
@@ -347,9 +347,9 @@ export default function Home() {
                 </a>
                 <p className="text-[16px] md:text-[30px] font-bold">今回のソースコード</p>
                 <a href="https://github.com/nobu0603/lottie-dev" target="_blank" rel="noreferrer" className="block mb-[40px] md:mb-[80px] md:hover:opacity-70 transition-opacity js-card">
-                  <div className="linkCard w-full h-[100px] md:h-[150px] flex bg-white dark:bg-[#333] rounded-md border border-gray-200 dark:border-[#E5E8EC] overflow-hidden">
+                  <div className="linkCard w-full h-[100px] md:h-[150px] flex bg-white rounded-md border border-gray-200 overflow-hidden">
                     <Image src={linkGitImage} alt="GitHub - nobu0603/lottie-dev" className="w-[30%] object-cover" priority />
-                    <div className="w-[70%] py-4 px-3 border-l border-gray-200 dark:border-[#E5E8EC]">
+                    <div className="w-[70%] py-4 px-3 border-l border-gray-200">
                       <p className="font-bold text-[14px] md:text-[20px] mb-[5px] md:mb-[10px] line-clamp-2">GitHub - nobu0603/lottie-dev</p>
                       <p className="line-clamp-1 md:line-clamp-2 text-[12px] md:text-[14px]">Contribute to nobu0603/lottie-dev development by creating an account on GitHub.</p>
                     </div>
